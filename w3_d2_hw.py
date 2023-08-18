@@ -33,9 +33,6 @@ class Cart:
          print(self.items)  
 
 
-    def hello():
-        print("hello brendan")
-
         
 my_cart = Cart()
 d_cart = Cart()
@@ -46,12 +43,12 @@ print(juice)
 chicken = Item('fried', 2, 10.50) 
 my_cart.add_item(milk) 
 print(my_cart.items)
-# my_cart.remove_item('milk')
+my_cart.remove_item('milk')
 my_cart.show_item()
 d_cart.add_item(bread)
 d_cart.show_item()
 
-Cart.hello()
+
 
 
 
