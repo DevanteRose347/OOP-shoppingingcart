@@ -32,21 +32,22 @@ class Cart:
     def show_item(self): 
          print(self.items)  
 
+    def run(self):
+        my_cart = Cart() 
+ 
+        while True:
+            response = input("What would you like to do?: add_item, remove_item, show_item, Exit: ").upper().strip()
+            if response == 'add_item':
+                my_cart.add_item()
+            elif response == 'remove_item':
+                my_cart.remove_item()
+            elif response == 'show_item':
+                 my_cart.show_item()
+            else:
+                print("Thank you for shopping")
 
-        
-my_cart = Cart()
-d_cart = Cart()
-milk = Item('milk', 1, 3.50)
-bread = Item('bread', 2, 1.75 )
-juice = Item('lemonade',3, 2.10)
-print(juice)
-chicken = Item('fried', 2, 10.50) 
-my_cart.add_item(milk) 
-print(my_cart.items)
-my_cart.remove_item('milk')
-my_cart.show_item()
-d_cart.add_item(bread)
-d_cart.show_item()
+    run()
+
 
 
 
