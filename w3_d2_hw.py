@@ -36,8 +36,7 @@ class Cart:
         my_cart = Cart() 
  
         while True:
-            response = input("What would you like to do?: add_item, remove_item, show_item, Exit: ").upper().strip()
-            if response == 'add_item':
+            if (response := input("What would you like to do?: add_item, remove_item, show_item, Exit: ").upper().strip()) == 'add_item':
                 my_cart.add_item()
             elif response == 'remove_item':
                 my_cart.remove_item()
